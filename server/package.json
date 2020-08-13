@@ -10,9 +10,9 @@
   "author": "Andras Nagy",
   "license": "ISC",
   "dependencies": {
+    "apollo-server-koa": "^2.16.1",
+    "graphql": "^15.3.0",
     "koa": "^2.13.0",
-    "koa-body": "^4.2.0",
-    "koa-router": "^9.1.0",
     "mongodb": "^3.6.0"
   },
   "devDependencies": {

@@ -1,25 +1,36 @@
 const Koa = require('koa')
-const Router = require('koa-router')
+const { ApolloServer, gql } = require('apollo-server-koa')
 const { open, getCollection } = require('./db')
 const app = new Koa()
-const PORT = 3000
-const router = new Router()
+const port = 4000
 const connection = open()
 
-router.get('/', async (ctx) => {
-  const collectionTodos = await getCollection(connection, 'todos')
-    .catch((e) => {
-      throw `Getting collection failed: ${e}`
-    })
+const typeDefs = gql`
+  type Query {
+    hello: String!
+  }
+`
 
-  const listOfTodos = await collectionTodos.find().toArray()
-    .catch((e) => { 
-      throw `Getting list failed: ${e}`
-    })
+const resolvers = {
+  Query: {
+    hello: async () => {
+      const collectionTodos = await getCollection(connection, 'todos')
+        .catch((e) => {
+          throw `Getting collection failed: ${e}`
+        })
 
-  ctx.body = listOfTodos[0]
-})
+      const listOfTodos = await collectionTodos.find().toArray()
+        .catch((e) => {
+          throw `Getting list failed: ${e}`
+        })
+      return listOfTodos[0]['todo']
+    },
+  },
+}
 
-app.use(router.routes())
+const server = new ApolloServer({ typeDefs, resolvers })
+server.applyMiddleware({ app })
 
-app.listen(PORT)
+app.listen(port, () =>
+  console.log(`🚀 Server ready at http://localhost:${port}${server.graphqlPath}`),
+);
