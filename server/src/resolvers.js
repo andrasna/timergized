@@ -1,3 +1,4 @@
+import mongodb from 'mongodb'
 import { open, getCollection } from './db.js'
 const connection = open()
 
@@ -26,6 +27,23 @@ const resolvers = {
 
       const inserted  = await collectionUsers.insertOne(args)
       return inserted.ops[0]
+    },
+    deleteUser: async (parent, args, context) => {
+      const collectionUsers = await getCollection(connection, 'users')
+        .catch((e) => {
+          throw `Getting collection failed: ${e}`
+        })
+
+      const deleted  = await collectionUsers.findOneAndDelete({
+        _id: new mongodb.ObjectID(args._id)
+      })
+
+      if (deleted.value !== null) {
+        return deleted.value
+      } else {
+        console.log(`Deletion unsuccessful.`)
+      }
+
     }
   },
 }
