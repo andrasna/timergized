@@ -3,18 +3,30 @@ const connection = open()
 
 const resolvers = {
   Query: {
-    hello: async () => {
-      const collectionTodos = await getCollection(connection, 'todos')
+    users: async () => {
+      const collectionUsers = await getCollection(connection, 'users')
         .catch((e) => {
           throw `Getting collection failed: ${e}`
         })
 
-      const listOfTodos = await collectionTodos.find().toArray()
+      const listOfUsers = await collectionUsers.find().toArray()
         .catch((e) => {
           throw `Getting list failed: ${e}`
         })
-      return listOfTodos[0]['todo']
+      return listOfUsers
     },
+  },
+
+  Mutation: {
+    createUser: async (parent, args, context) => {
+      const collectionUsers = await getCollection(connection, 'users')
+        .catch((e) => {
+          throw `Getting collection failed: ${e}`
+        })
+
+      const inserted  = await collectionUsers.insertOne(args)
+      return inserted.ops[0]
+    }
   },
 }
 

@@ -1,6 +1,6 @@
 import MongoClient from 'mongodb'
 const url = 'mongodb://localhost:27017'
-const dbName = 'dontforget'
+const dbName = 'timergized'
 
 const open = () => {
   return MongoClient.connect(url, { useUnifiedTopology: true })
