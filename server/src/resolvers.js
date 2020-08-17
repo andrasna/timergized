@@ -28,6 +28,27 @@ const resolvers = {
       const inserted  = await collectionUsers.insertOne(args)
       return inserted.ops[0]
     },
+
+    updateUser: async (parent, args, context) => {
+      const collectionUsers = await getCollection(connection, 'users')
+        .catch((e) => {
+          throw `Getting collection failed: ${e}`
+        })
+
+      const { _id, name, email } = args
+      
+      const updated  = await collectionUsers.findOneAndUpdate(
+        { _id: new mongodb.ObjectID(_id) },
+        { $set: {
+            name,
+            email,
+          },
+        },
+      )
+      
+      return updated.value
+    },
+
     deleteUser: async (parent, args, context) => {
       const collectionUsers = await getCollection(connection, 'users')
         .catch((e) => {
@@ -43,8 +64,7 @@ const resolvers = {
       } else {
         console.log(`Deletion unsuccessful.`)
       }
-
-    }
+    },
   },
 }
 
