@@ -1,6 +1,6 @@
 import ApolloServerKoa from 'apollo-server-koa'
 
-const { gql } = ApolloServerKoa 
+const {gql} = ApolloServerKoa 
 
 const typeDefs = gql`
   type User {

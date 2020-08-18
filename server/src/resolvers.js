@@ -1,5 +1,5 @@
 import mongodb from 'mongodb'
-import { open, getCollection } from './db.js'
+import {open, getCollection} from './db.js'
 const connection = open()
 
 const resolvers = {

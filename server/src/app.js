@@ -1,15 +1,15 @@
 import ApolloServerKoa from 'apollo-server-koa'
-const { ApolloServer } = ApolloServerKoa 
+const {ApolloServer} = ApolloServerKoa 
 
 import typeDefs from './type-defs.js'
 import resolvers from './resolvers.js'
 
-const server = new ApolloServer({ typeDefs, resolvers })
+const server = new ApolloServer({typeDefs, resolvers})
 
 import Koa from 'koa'
 const app = new Koa()
 
-server.applyMiddleware({ app })
+server.applyMiddleware({app})
 
 const port = 4000
 app.listen(port, () =>

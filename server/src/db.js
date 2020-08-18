@@ -2,7 +2,7 @@ import MongoClient from 'mongodb'
 const url = 'mongodb://localhost:27017'
 
 const open = () => {
-  return MongoClient.connect(url, { useUnifiedTopology: true })
+  return MongoClient.connect(url, {useUnifiedTopology: true})
 }
 
 const dbName = 'timergized'
@@ -15,4 +15,4 @@ const getCollection = (connection, collection) => {
   })
 }
 
-export { open, getCollection }
+export {open, getCollection}

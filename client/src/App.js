@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
   ApolloProvider,
   ApolloClient,
@@ -23,7 +23,7 @@ const getUsers = gql`
 `
 
 function ListOfUsers() {
-  const { loading, error, data } = useQuery(getUsers)
+  const {loading, error, data} = useQuery(getUsers)
 
   // if (loading) return <p>Loading</p>;
   // if (error) return <p>ERROR</p>;
@@ -33,10 +33,10 @@ function ListOfUsers() {
   const users = []
 
   for (let user of data.users) {
-    users.push(<li key={user._id}>{ `Username ${user.name}, Email: ${user.email}` }</li>)
+    users.push(<li key={user._id}>{`Username ${user.name}, Email: ${user.email}` }</li>)
   }
 
-  return <ul>{ users }</ul>
+  return <ul>{users}</ul>
 }
 
 function App() {
