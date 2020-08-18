@@ -31,11 +31,12 @@ function ListOfUsers() {
   if (!data) return null 
 
   const users = []
+
   for (let user of data.users) {
-    users.push(<li key={user._id}>{ `Username ${user.name}, Email: ${user.email}`}</li>)
+    users.push(<li key={user._id}>{ `Username ${user.name}, Email: ${user.email}` }</li>)
   }
 
-  return <ul>{users}</ul>
+  return <ul>{ users }</ul>
 }
 
 function App() {
