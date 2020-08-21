@@ -1,10 +1,11 @@
 import React from 'react'
+import WrapperOuter from './components/WrapperOuter.js'
+import WrapperInner from './components/WrapperInner.js'
+import './css/index.css'
 import {
   ApolloProvider,
   ApolloClient,
   InMemoryCache,
-  useQuery,
-  gql,
 } from '@apollo/client'
 
 const client = new ApolloClient({
@@ -12,38 +13,14 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 })
 
-const getUsers = gql`
-  {
-    users {
-      _id
-      name
-      email
-    }
-  }
-`
-
-function ListOfUsers() {
-  const {data} = useQuery(getUsers)
-
-  if (!data) return null 
-
-  return(
-    <ul>
-      {data.users.map((user, i) => (
-        <li key={i}>{user.name} {user.email}</li>
-      ))}
-    </ul>
-  )
-}
-
 function App() {
   return (
     <ApolloProvider client={client}>
-      <div className="App">
-        <header className="App-header">
-          <ListOfUsers />
-        </header>
-      </div>
+      <WrapperOuter>
+        <WrapperInner>
+          <h1>Hello...</h1>
+        </WrapperInner>
+      </WrapperOuter>
     </ApolloProvider>
   )
 }
