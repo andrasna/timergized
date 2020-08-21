@@ -23,20 +23,17 @@ const getUsers = gql`
 `
 
 function ListOfUsers() {
-  const {loading, error, data} = useQuery(getUsers)
+  const {data} = useQuery(getUsers)
 
-  // if (loading) return <p>Loading</p>;
-  // if (error) return <p>ERROR</p>;
-  // if (!data) return <p>Not found</p>;
   if (!data) return null 
 
-  const users = []
-
-  for (let user of data.users) {
-    users.push(<li key={user._id}>{`Username ${user.name}, Email: ${user.email}` }</li>)
-  }
-
-  return <ul>{users}</ul>
+  return(
+    <ul>
+      {data.users.map((user, i) => (
+        <li key={i}>{user.name} {user.email}</li>
+      ))}
+    </ul>
+  )
 }
 
 function App() {
