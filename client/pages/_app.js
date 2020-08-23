@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import theme from '../utils/theme'
 const {color} = theme
 
-const MyApp = ({ Component, pageProps }) => {
+const App = ({ Component, pageProps }) => {
   return(
     <>
       <Component {...pageProps} />
@@ -17,4 +17,4 @@ const MyApp = ({ Component, pageProps }) => {
   )
 }
 
-export default MyApp
+export default App

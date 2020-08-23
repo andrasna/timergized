@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Navbar from '../components/navbar'
 import Wrapper from '../components/wrapper'
+import Navbar from '../components/navbar'
 import theme from '../utils/theme'
 const {width} = theme
 

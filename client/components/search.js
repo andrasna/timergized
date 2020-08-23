@@ -1,6 +1,6 @@
 const Search = () => {
   return(
-    null
+    <input type="search" name="q" />
   )
 }
 
