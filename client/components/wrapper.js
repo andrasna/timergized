@@ -1,5 +1,4 @@
-export default function Wrapper(props) {
-
+const Wrapper = (props) => {
   return(
     <div>
       {props.children}
@@ -11,3 +10,5 @@ export default function Wrapper(props) {
     </div>
   )
 }
+
+export default Wrapper

@@ -1,4 +1,4 @@
-function Alert(props) {
+const Alert = (props) => {
   return(
     <p>
       {props.children}
