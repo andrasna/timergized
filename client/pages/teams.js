@@ -1,10 +1,12 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import Navbar from '../components/navbar'
+import Wrapper from '../components/wrapper'
+import theme from '../utils/theme'
+const {width} = theme
 
-export default function Teams() {
+const Teams = () => {
   return (
-    <div className={styles.inner}>
+    <Wrapper theme={width.lg}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -12,8 +14,8 @@ export default function Teams() {
 
       <Navbar />
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
+      <main>
+        <h1>
           Team
         </h1>
 
@@ -26,6 +28,8 @@ export default function Teams() {
         </p>
 
       </main>
-    </div>
+    </Wrapper>
   )
 }
+
+export default Teams

@@ -1,10 +1,12 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import Navbar from '../components/navbar'
+import Wrapper from '../components/wrapper'
+import theme from '../utils/theme'
+const {width} = theme
 
-export default function Projects() {
+const Projects = () => {
   return (
-    <div className={styles.inner}>
+    <Wrapper theme={width.lg}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -12,8 +14,8 @@ export default function Projects() {
 
       <Navbar />
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
+      <main>
+        <h1>
           Projects  
         </h1>
 
@@ -21,6 +23,8 @@ export default function Projects() {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet malesuada turpis. Vivamus gravida vehicula erat vitae consectetur. Nam ultricies suscipit eros, vel maximus nulla mollis non. Donec a arcu nisl. Vestibulum tortor enim, tempor vitae blandit nec, molestie nec nunc. Fusce fringilla accumsan aliquam. Fusce accumsan nibh in imperdiet dignissim. In hendrerit eu risus vitae semper. Pellentesque auctor purus neque, et scelerisque elit fermentum sed. Nunc sit amet dignissim metus. Cras sit amet urna est. Donec interdum quis mauris sit amet rutrum. 
         </p>
       </main>
-    </div>
+    </Wrapper>
   )
 }
+
+export default Projects

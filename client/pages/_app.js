@@ -1,16 +1,16 @@
 import '../styles/globals.css'
 import theme from '../utils/theme'
-const {colors} = theme
+const {color} = theme
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
   return(
     <>
       <Component {...pageProps} />
 
       <style jsx global>{`
         html {
-          color: ${colors.white};
-          background: linear-gradient(to right, ${colors.royalBlue}, ${colors.wisteria});
+          color: ${color.white};
+          background: linear-gradient(to right, ${color.royalBlue}, ${color.wisteria});
         }
       `}</style>
     </>

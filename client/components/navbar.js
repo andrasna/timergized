@@ -15,7 +15,19 @@ export default function Navbar() {
       <style jsx>{`
         ul {
           display: flex;
+          list-style: none;
+          padding-left: 0;
+          justify-content: space-around;
         }
+
+        a {
+          opacity: .8;  
+        }
+
+        a:hover {
+          opacity: 1;
+        }
+
       `}</style>
     </nav>
   )
