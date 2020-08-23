@@ -5,8 +5,7 @@ function Alert(props) {
   
       <style jsx>{`
         background: ${props.theme};
-      }
-
+        padding: 1rem;
       `}</style>
     </p>
   )
