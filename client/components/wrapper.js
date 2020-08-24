@@ -6,6 +6,7 @@ const Wrapper = (props) => {
       <style jsx>{`
         max-width: ${props.theme};
         margin: 0 auto;
+        padding: 0 1.5rem;
       `}</style>
     </div>
   )

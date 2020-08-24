@@ -11,6 +11,9 @@ const Navbar = (props) => {
 
       <style jsx>{`
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5rem 0;
       `}</style>
     </div>
   )

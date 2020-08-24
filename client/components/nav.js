@@ -15,13 +15,18 @@ const Nav = () => {
       <style jsx>{`
         ul {
           display: flex;
+          flex-wrap: wrap;
           list-style: none;
           padding-left: 0;
           justify-content: space-around;
         }
 
+        li {
+          margin-left: 3rem;
+        }
+
         a {
-          opacity: .8;  
+          opacity: .8;
         }
 
         a:hover {
