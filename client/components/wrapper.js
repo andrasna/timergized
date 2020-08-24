@@ -4,9 +4,9 @@ const Wrapper = (props) => {
       {props.children}
 
       <style jsx>{`
-        max-width: ${props.theme};
+        max-width: ${props.theme || '100%'};
         margin: 0 auto;
-        padding: 0 1.5rem;
+        padding: 0 2rem;
       `}</style>
     </div>
   )

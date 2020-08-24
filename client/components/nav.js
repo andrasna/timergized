@@ -9,30 +9,17 @@ const Nav = () => {
         <li><Link href="/clients"><a>Clients</a></Link></li>
         <li><Link href="/teams"><a>Teams</a></Link></li>
         <li><Link href="/reports"><a>Reports</a></Link></li>
-        <li><Link href="/settings"><a>Settings</a></Link></li>
       </ul>
 
       <style jsx>{`
         ul {
-          display: flex;
-          flex-wrap: wrap;
+          display: grid;
           list-style: none;
           padding-left: 0;
-          justify-content: space-around;
+          column-gap: 3rem;
+          justify-content: end;
+          grid-template-columns: repeat(auto-fit, minmax(0, auto));
         }
-
-        li {
-          margin-left: 3rem;
-        }
-
-        a {
-          opacity: .8;
-        }
-
-        a:hover {
-          opacity: 1;
-        }
-
       `}</style>
     </nav>
   )

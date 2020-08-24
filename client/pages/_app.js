@@ -9,8 +9,8 @@ const App = ({ Component, pageProps }) => {
 
       <style jsx global>{`
         html {
-          color: ${color.white};
-          background: linear-gradient(to right, ${color.royalBlue}, ${color.wisteria});
+          color: ${color.a1};
+          background: linear-gradient(to bottom, ${color.b1}, ${color.c1});
         }
       `}</style>
     </>
