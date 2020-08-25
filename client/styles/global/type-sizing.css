@@ -1,0 +1,41 @@
+.h1,
+h1 {
+  font-size: calc(var(--font-size) * pow(var(--ratio), 5));
+  line-height: calc(var(--baseline) * 3);
+}
+
+.h2,
+h2 {
+  font-size: calc(var(--font-size) * pow(var(--ratio), 4));
+  line-height: calc(var(--baseline) * 3);
+}
+
+.h3,
+h3 {
+  font-size: calc(var(--font-size) * pow(var(--ratio), 3));
+  line-height: calc(var(--baseline) * 2);
+}
+
+.h4,
+h4 {
+  font-size: calc(var(--font-size) * pow(var(--ratio), 2));
+  line-height: calc(var(--baseline) * 2);
+}
+
+.h5,
+h5 {
+  font-size: calc(var(--font-size) * var(--ratio));
+  line-height: var(--baseline);
+}
+
+.h6,
+h6,
+p {
+  font-size: var(--font-size);
+  line-height: var(--baseline);
+}
+
+span {
+  font-size: var(--font-size);
+}
+

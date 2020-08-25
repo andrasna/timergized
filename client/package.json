@@ -8,12 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.2.2",
     "next": "9.5.2",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
   "devDependencies": {
+    "postcss-baseline-grid-overlay": "^3.0.1",
     "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-pow": "^1.0.1",
     "postcss-preset-env": "^6.7.0"
   }
 }

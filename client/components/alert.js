@@ -1,13 +1,12 @@
+import styles from '../styles/alert.module.css'
+
 const Alert = (props) => {
   return(
-    <p>
-      {props.children}
-  
-      <style jsx>{`
-        background: ${props.theme};
-        padding: 1rem;
-      `}</style>
-    </p>
+    <>
+      <p className={styles[props.type]}>
+        {props.children}
+      </p>
+    </>
   )
 }
 

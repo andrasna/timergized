@@ -1,5 +1,7 @@
 module.exports = {
   plugins: [
+    'postcss-pow',
+    'postcss-baseline-grid-overlay',
     'postcss-flexbugs-fixes',
     [
       'postcss-preset-env',

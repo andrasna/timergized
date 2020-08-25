@@ -1,0 +1,8 @@
+.primary {
+  display: grid;
+  column-gap: var(--space-2);
+  justify-content: end;
+  grid-template-columns: repeat(auto-fit, minmax(0, auto));
+  list-style: none;
+  padding-left: 0;
+}

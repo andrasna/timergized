@@ -1,13 +1,9 @@
+import styles from '../styles/wrapper.module.css'
+
 const Wrapper = (props) => {
   return(
-    <div>
+    <div className={styles[props.type]}>
       {props.children}
-
-      <style jsx>{`
-        max-width: ${props.theme || '100%'};
-        margin: 0 auto;
-        padding: 0 2rem;
-      `}</style>
     </div>
   )
 }

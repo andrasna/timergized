@@ -1,0 +1,13 @@
+.normal {
+  border: 0;
+  cursor: pointer;
+  background-color: transparent; 
+  color: white;
+}
+
+.withIcon {
+  composes: normal;
+  display: flex;
+  align-items: center;
+  text-indent: .2rem;
+}

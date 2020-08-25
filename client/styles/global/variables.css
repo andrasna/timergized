@@ -1,0 +1,24 @@
+:root {
+  /* Color */
+  --color-a1: #fff;
+  --color-b1: #2a3b64;
+  --color-c1: #75fff6;
+  --color-d1: green;
+  --color-e1: red;
+
+  /* Type Sizing */
+  --baseline: 1.5rem;
+  --font-size: 1rem;
+  --ratio: 1.333;
+
+  /* Space */
+  --space-1: var(--baseline);
+  --space-2: calc(var(--baseline) * 2);
+  --space-3: calc(var(--baseline) * 3);
+
+  /* Width */
+  --width-full: 100%;
+  --width-lg: 85rem;
+  --width-md: 60rem;
+  --width-sm: 40rem;
+}

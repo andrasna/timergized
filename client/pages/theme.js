@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Wrapper from '../components/wrapper'
-import Header from '../components/header'
+import Alert from '../components/alert'
 import Lorem from '../components/lorem'
 
-const Projects = () => {
+const Home = () => {
   return (
     <Wrapper type="lg">
       <Head>
@@ -11,14 +11,16 @@ const Projects = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
-
       <Lorem>
-        <h1>Projects</h1>
+        <h1>Test</h1>
       </Lorem>
+
+      <Alert type="error">Error</Alert>
+
+      <Alert type="success">Success</Alert>
 
     </Wrapper>
   )
 }
 
-export default Projects
+export default Home

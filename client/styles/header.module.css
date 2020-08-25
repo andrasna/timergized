@@ -1,0 +1,15 @@
+.outer {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto auto;
+  gap: var(--space-1);
+  padding: calc(var(--space-1) / 2) 0;
+}
+
+.inner {
+  display: grid;
+  align-items: center;
+  justify-content: start;
+  gap: var(--space-2);
+  grid-template-columns: repeat(auto-fit, minmax(0, auto));
+}

@@ -1,32 +1,22 @@
 import Head from 'next/head'
 import Wrapper from '../components/wrapper'
-import Navbar from '../components/navbar'
-import theme from '../utils/theme'
-const {width} = theme
+import Header from '../components/header'
+import Lorem from '../components/lorem'
 
 const Clients = () => {
   return (
-    <Wrapper theme={width.lg}>
+    <Wrapper type="lg">
       <Head>
-        <title>Create Next App</title>
+        <title>Timergized</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
+      <Header />
 
-      <main>
-        <h1>
-          Clients 
-        </h1>
+      <Lorem>
+        <h1>Clients</h1>
+      </Lorem>
 
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet malesuada turpis. Vivamus gravida vehicula erat vitae consectetur. Nam ultricies suscipit eros, vel maximus nulla mollis non. Donec a arcu nisl. Vestibulum tortor enim, tempor vitae blandit nec, molestie nec nunc. Fusce fringilla accumsan aliquam. Sed pretium finibus urna, et placerat ex malesuada et. Integer tempus nisl eu turpis venenatis, a tempus massa pretium. Donec fermentum risus a tellus pulvinar scelerisque. Fusce accumsan nibh in imperdiet dignissim. In hendrerit eu risus vitae semper.
-        </p>
-
-        <p>
-        Fusce fringilla accumsan aliquam. Sed pretium finibus urna, et placerat ex malesuada et. Integer tempus nisl eu turpis venenatis, a tempus massa pretium. Donec fermentum risus a tellus pulvinar scelerisque. Fusce accumsan nibh in imperdiet dignissim. In hendrerit eu risus vitae semper. Pellentesque auctor purus neque, et scelerisque elit fermentum sed. Nunc sit amet dignissim metus. Cras sit amet urna est. Donec interdum quis mauris sit amet rutrum. 
-        </p>
-      </main>
     </Wrapper>
   )
 }
