@@ -5,10 +5,10 @@
 
 .error {
   composes: normal;
-  background-color: var(--color-d1);
+  background-color: var(--color-e1);
 }
 
 .success {
   composes: normal;
-  background-color: var(--color-e1);
+  background-color: var(--color-d1);
 }

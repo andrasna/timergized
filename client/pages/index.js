@@ -19,10 +19,8 @@ const Home = () => {
       </Lorem>
 
       <Alert type="normal">Normal</Alert>
-
-      <Alert type="error">Error</Alert>
-
       <Alert type="success">Success</Alert>
+      <Alert type="error">Error</Alert>
 
     </Wrapper>
   )

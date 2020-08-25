@@ -1,10 +1,10 @@
 :root {
   /* Color */
   --color-a1: #fff;
-  --color-b1: #2a3b64;
-  --color-c1: #75fff6;
-  --color-d1: green;
-  --color-e1: red;
+  --color-b1: #0747e6;
+  --color-c1: #336be8;
+  --color-d1: #23bb82;
+  --color-e1: #fb4444;
 
   /* Type Sizing */
   --baseline: 1.5rem;
