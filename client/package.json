@@ -10,11 +10,8 @@
   "dependencies": {
     "@ant-design/icons": "^4.2.2",
     "next": "9.5.2",
-    "normalize.css": "^8.0.1",
     "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "suitcss-base": "^5.0.0",
-    "tailwindcss": "^1.7.3"
+    "react-dom": "16.13.1"
   },
   "devDependencies": {
     "postcss-baseline-grid-overlay": "^3.0.1",
