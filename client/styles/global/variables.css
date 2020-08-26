@@ -28,6 +28,8 @@
   --bxs-search-form-focus: var(--black-3);
   --bgc-search-input: var(--black-1);
   --bgc-search-button: var(--black-2);
+  --c-search-button: var(--white);
+  --c-search-input: var(--white);
 
   /* Type */
   --baseline: 1.5rem;
