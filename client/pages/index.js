@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Wrapper from '../components/wrapper'
 import Header from '../components/header'
+import CallToAction from '../components/call-to-action'
 import Alert from '../components/alert'
 import Lorem from '../components/lorem'
 
@@ -13,6 +14,8 @@ const Home = () => {
       </Head>
 
       <Header />
+
+      <CallToAction />
 
       <Lorem>
         <h1>Home</h1>

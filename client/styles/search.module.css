@@ -1,10 +1,11 @@
 .form {
-  background-color: rgba(0, 0, 0, .1);  
+  background-color: rgba(0, 0, 0, .1);
+  background-color: var(--bgc-search-form);
   border-radius: .8rem;
   display: flex;
 
   &:focus-within {
-    box-shadow: 0 0 1rem rgba(0, 0, 0, .2);
+    box-shadow: 0 0 1rem var(--bxs-search-form-focus);
   }
 }
 
@@ -12,7 +13,7 @@
   border: 0;
   padding: .5rem 0 .5rem 1rem;
   color: white;
-  background: rgba(0, 0, 0, .05);
+  background: var(--bgc-search-input);
   outline: none;
   border-radius: .8rem 0 0 .8rem;
   width: calc(100% - 2rem);
@@ -26,7 +27,7 @@
   border: 0;
   cursor: pointer;
   border-radius: 0 .8rem .8rem 0;
-  background-color: rgba(0, 0, 0, .1);
+  background: var(--bgc-search-button);
   padding: 0 .5rem;
   color: white;
 }

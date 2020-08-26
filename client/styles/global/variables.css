@@ -1,12 +1,35 @@
 :root {
-  /* Color */
-  --color-a1: #fff;
-  --color-b1: #0747e6;
-  --color-c1: #336be8;
-  --color-d1: #23bb82;
-  --color-e1: #fb4444;
+  /* Colors */
+  --white: hsla(0, 0%, 100%, 1);
 
-  /* Type Sizing */
+  --black: hsla(0, 0%, 0%, 1);
+  --black-1: hsla(0, 0%, 0%, .05);
+  --black-2: hsla(0, 0%, 0%, .1);
+  --black-3: hsla(0, 0%, 0%, .2);
+
+  --blue-1: hsla(222, 94%, 46%, 1);
+  --blue-2: hsla(221, 79%, 55%, 1);
+
+  --green-1: hsla(157, 68%, 43%, 1);
+
+  --red-1: hsla(0, 95%, 62%, 1);
+
+  /* Link colors to where they are used. */
+  --bgc-site-1: var(--blue-1);
+  --bgc-site-2: var(--blue-2);
+
+  --bgc-alert-normal: var(--blue-2);
+  --bgc-alert-success: var(--green-1);
+  --bgc-alert-error: var(--red-1);
+
+  --c-button-normal: var(--white);
+
+  --bgc-search-form: var(--black-2);
+  --bxs-search-form-focus: var(--black-3);
+  --bgc-search-input: var(--black-1);
+  --bgc-search-button: var(--black-2);
+
+  /* Type */
   --baseline: 1.5rem;
   --font-size: 1rem;
   --ratio: 1.333;

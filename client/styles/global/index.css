@@ -4,12 +4,12 @@
 @import 'spacing.css';
 
 body {
-  /* baseline-grid-overlay: 24px rgba(255, 255, 255, .3) -1; */
+  baseline-grid-overlay: 24px rgba(255, 255, 255, .3) -1;
 }
 
 html {
   color: white;
-  background: linear-gradient(to bottom, var(--color-b1), var(--color-c1));
+  background: linear-gradient(to bottom, var(--bgc-site-1), var(--bgc-site-2));
 }
 
 html,
