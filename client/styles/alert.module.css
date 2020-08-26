@@ -1,5 +1,5 @@
 .normal {
-  padding: calc(var(--space-1) / 2);
+  padding: var(--s2);
   background-color: var(--bgc-alert-normal);
 }
 

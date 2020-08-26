@@ -10,7 +10,7 @@
 
 .input {
   border: 0;
-  padding: calc(var(--space-1) / 4) 0 calc(var(--space-1) / 4) calc(var(--space-1) / 2);
+  padding: var(--s1) 0 var(--s1) var(--s2);
   color: var(--c-search-input);
   background: var(--bgc-search-input);
   outline: none;
@@ -27,6 +27,6 @@
   cursor: pointer;
   border-radius: 0 .8rem .8rem 0;
   background: var(--bgc-search-button);
-  padding: 0 .5rem;
+  padding: 0 var(--s1);
   color: var(--c-search-button);
 }
