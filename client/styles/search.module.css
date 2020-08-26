@@ -1,5 +1,4 @@
 .form {
-  background-color: rgba(0, 0, 0, .1);
   background-color: var(--bgc-search-form);
   border-radius: .8rem;
   display: flex;
