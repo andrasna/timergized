@@ -5,7 +5,7 @@
 @import 'type-sizing.css';
 
 body {
-  /* baseline-grid-overlay: 24px rgba(255, 255, 255, .3) -1; */
+  baseline-grid-overlay: 24px rgba(255, 255, 255, .3) -1;
 }
 
 html {
