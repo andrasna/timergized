@@ -9,14 +9,17 @@
 
   --blue-1: hsla(222, 94%, 46%, 1);
   --blue-2: hsla(221, 79%, 55%, 1);
+  --blue-3: hsla(219, 100%, 73%, 1);
+
+  --pink-red-1: hsla(0, 44%, 70%, 1);
 
   --green-1: hsla(157, 68%, 43%, 1);
 
   --red-1: hsla(0, 95%, 62%, 1);
 
   /* Link colors to where they are used. */
-  --bgc-site-1: var(--blue-1);
-  --bgc-site-2: var(--blue-2);
+  --bgc-site-1: var(--blue-3);
+  --bgc-site-2: var(--black-3);
 
   --bgc-alert-normal: var(--blue-2);
   --bgc-alert-success: var(--green-1);

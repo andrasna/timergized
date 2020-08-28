@@ -4,6 +4,8 @@ import Header from '../components/header'
 import CallToAction from '../components/call-to-action'
 import Alert from '../components/alert'
 import Lorem from '../components/lorem'
+import ProjectList from '../components/project-list'
+import Title from '../components/title'
 
 const Home = () => {
   return (
@@ -15,15 +17,22 @@ const Home = () => {
 
       <Header />
 
-      <CallToAction />
+      <Title type="withIcon">
+        Pinned projects
+      </Title>
 
-      <Lorem>
+      <ProjectList />
+
+      {/* <CallToAction /> */}
+
+
+      {/* <Lorem>
         <h1>Home</h1>
-      </Lorem>
+      </Lorem> */}
 
-      <Alert type="normal">Normal</Alert>
+      {/* <Alert type="normal">Normal</Alert>
       <Alert type="success">Success</Alert>
-      <Alert type="error">Error</Alert>
+      <Alert type="error">Error</Alert> */}
 
     </Wrapper>
   )
