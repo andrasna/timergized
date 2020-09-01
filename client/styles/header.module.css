@@ -1,15 +1,34 @@
-.outer {
+.navArea {
   display: grid;
   align-items: center;
-  grid-template-columns: auto auto;
-  gap: var(--s3);
-  padding: var(--s2) 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: var(--s3) 0;
 }
 
-.inner {
+.optsArea {
   display: grid;
-  align-items: center;
-  justify-content: start;
   gap: var(--s3);
+  justify-content: start;
   grid-template-columns: repeat(auto-fit, minmax(0, auto));
+}
+
+.logoContainer {
+  justify-self: center;
+}
+
+.searchArea {
+  margin-left: var(--s2);
+  margin-right: var(--s2);
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-bottom: var(--s3);
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.iconContainer {
+  display: flex;
 }

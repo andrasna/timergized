@@ -4,12 +4,17 @@
 
   --black: hsla(0, 0%, 0%, 1);
   --black-1: hsla(0, 0%, 0%, .05);
-  --black-2: hsla(0, 0%, 0%, .1);
-  --black-3: hsla(0, 0%, 0%, .2);
+  --black-2: hsla(0, 0%, 0%, .10);
+  --black-3: hsla(0, 0%, 0%, .17);
+  --black-4: hsla(0, 0%, 0%, .1);
+  --black-5: hsla(0, 0%, 0%, .2);
+
 
   --blue-1: hsla(222, 94%, 46%, 1);
   --blue-2: hsla(221, 79%, 55%, 1);
   --blue-3: hsla(219, 100%, 73%, 1);
+
+  --blue-magenta: hsla(251, 65%, 59%, 1);
 
   --pink-red-1: hsla(0, 44%, 70%, 1);
 
@@ -17,9 +22,14 @@
 
   --red-1: hsla(0, 95%, 62%, 1);
 
+  --yellow: hsla(50, 100%, 50%, 1);
+
   /* Link colors to where they are used. */
+  --bgc-site: var(--blue-magenta);
+
   --bgc-site-1: var(--blue-3);
   --bgc-site-2: var(--black-3);
+
 
   --bgc-alert-normal: var(--blue-2);
   --bgc-alert-success: var(--green-1);
@@ -27,12 +37,14 @@
 
   --c-button-normal: var(--white);
 
-  --bgc-search-form: var(--black-2);
-  --bxs-search-form-focus: var(--black-3);
+  --bgc-search-form: var(--black-4);
+  --bxs-search-form-focus: var(--black-5);
   --bgc-search-input: var(--black-1);
-  --bgc-search-button: var(--black-2);
+  --bgc-search-button: var(--black-4);
   --c-search-button: var(--white);
   --c-search-input: var(--white);
+
+  --bgc-card: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .05));
 
   /* Type */
   --baseline: 1.5rem;

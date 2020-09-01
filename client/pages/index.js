@@ -17,10 +17,6 @@ const Home = () => {
 
       <Header />
 
-      <Title type="withIcon">
-        Pinned projects
-      </Title>
-
       <ProjectList />
 
       {/* <CallToAction /> */}

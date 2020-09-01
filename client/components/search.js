@@ -1,5 +1,5 @@
 import styles from '../styles/search.module.css'
-import {SearchOutlined} from '@ant-design/icons';
+import SearchIcon from '@material-ui/icons/Search'
 
 const Search = () => {
   return(
@@ -7,7 +7,7 @@ const Search = () => {
       <input className={styles.input} placeholder="Search..." type="search" id="mySearch" name="q" />
       <button className={styles.button}>
         <span className="visuallyhidden">Search</span>
-        <SearchOutlined />
+        <SearchIcon style={{'fontSize': '1.3rem'}} />
       </button>
     </form>
   )

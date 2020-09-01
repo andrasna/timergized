@@ -3,31 +3,44 @@ import Nav from './nav'
 import Search from './search'
 import Logo from './logo'
 import Button from './button'
-import {UserOutlined, PlusOutlined} from '@ant-design/icons';
+import PersonIcon from '@material-ui/icons/Person'
+import AddIcon from '@material-ui/icons/Add'
+import ViewListIcon from '@material-ui/icons/ViewList'
+import ViewComfyIcon from '@material-ui/icons/ViewComfy'
 
-const Header = (props) => {
+const Header = () => {
   return(
-    <div className={styles.outer}>
-      <div className={styles.inner}>
-        <Logo />
+    <>
+      <div className={styles.navArea}>
+        <div className={styles.optsArea}>
+          <Button type="withIcon">
+            <PersonIcon />
+            John Doe
+          </Button>
 
-        <Button type="withIcon">
-          <UserOutlined />
-          John Doe
-        </Button>
+          <Button type="withIcon">
+            <AddIcon />
+            New Project
+          </Button>
+        </div>
 
-        <Button type="withIcon">
-          <PlusOutlined />
-          New Project
-        </Button>
+        <div className={styles.logoContainer}>
+          <Logo />
+        </div>
 
-        <Search />
+        <Nav />
       </div>
 
-      <Nav />
-  
-      {props.children}
-    </div>
+      <div className={styles.searchArea}>
+        <div className={styles.iconContainer}>
+          <ViewComfyIcon style={{ 'fontSize': '1.8rem'}}/>
+          <ViewListIcon style={{ 'fontSize': '1.8rem'}}/>
+        </div>
+        <div className={styles.searchContainer}>
+          <Search />
+        </div>
+      </div>
+    </>
   )
 }
 

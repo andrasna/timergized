@@ -1,27 +1,13 @@
 .list {
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  gap: var(--s4);
-  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  gap: var(--s3);
+  justify-content: center;
   margin-bottom: var(--s6);
 }
 
-.link {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  /* padding: var(--s2); */
-  width: calc(var(--s3) * 12);
-  height: calc(var(--s3) * 12);
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1;
-  border: 2px solid hsla(0, 0%, 100%, .2);
-  /* filter: grayscale(40%); */
-
-  &:hover {
-    /* filter: grayscale(0%); */
-  }
+.listItem {
+  justify-self: center;
 }
 
 .title {

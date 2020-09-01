@@ -1,0 +1,49 @@
+.item {
+  background: var(--bgc-card);
+  width: 12rem;
+  display: flex;
+  flex-direction: column;
+  padding: var(--s2);
+  border-radius: .5rem;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+}
+
+.image {
+  width: 100%;
+  height: 7rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: var(--s1);
+  /* filter: grayscale(40%); */
+
+  &:hover {
+    /* filter: grayscale(0%); */
+  }
+}
+
+.infoArea {
+  display: flex;
+}
+
+.title {
+  margin-bottom: var(--s1);
+  font-weight: 500;
+  margin-right: .5rem;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  font-size: 1.15rem;
+}
+
+.timeSpent {
+  margin-bottom: 0;
+  font-weight: 310;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
