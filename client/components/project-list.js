@@ -1,34 +1,34 @@
 import styles from '../styles/project-list.module.css'
-import ProjectCard from './project-list-link'
+import ProjectLink from './project-link'
 
-const ProjectList = (props) => {
+const ProjectList = () => {
   return(
     <ul className={styles.list}>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
-      <li className={styles.listItem}><ProjectCard /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
+      <li className={styles['list-item']}><ProjectLink /></li>
     </ul>
   )
 }

@@ -1,13 +1,9 @@
 .list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(11.5rem, auto));
   gap: var(--s3);
   justify-content: center;
   margin-bottom: var(--s6);
-}
-
-.listItem {
-  justify-self: center;
 }
 
 .title {

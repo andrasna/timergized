@@ -17,7 +17,6 @@
   "devDependencies": {
     "postcss-baseline-grid-overlay": "^3.0.1",
     "postcss-flexbugs-fixes": "^4.2.1",
-    "postcss-pow": "^1.0.1",
     "postcss-preset-env": "^6.7.0"
   }
 }

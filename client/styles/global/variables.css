@@ -1,55 +1,35 @@
 :root {
-  /* Colors */
-  --white: hsla(0, 0%, 100%, 1);
-
-  --black: hsla(0, 0%, 0%, 1);
-  --black-1: hsla(0, 0%, 0%, .05);
-  --black-2: hsla(0, 0%, 0%, .10);
-  --black-3: hsla(0, 0%, 0%, .17);
-  --black-4: hsla(0, 0%, 0%, .1);
-  --black-5: hsla(0, 0%, 0%, .2);
-
-
-  --blue-1: hsla(222, 94%, 46%, 1);
-  --blue-2: hsla(221, 79%, 55%, 1);
-  --blue-3: hsla(219, 100%, 73%, 1);
-
-  --blue-magenta: hsla(251, 65%, 59%, 1);
-
-  --pink-red-1: hsla(0, 44%, 70%, 1);
-
-  --green-1: hsla(157, 68%, 43%, 1);
-
-  --red-1: hsla(0, 95%, 62%, 1);
-
-  --yellow: hsla(50, 100%, 50%, 1);
+  /* Color catalogue */
+  --color-medium-purple: hsla(251, 65%, 59%, 1);
+  --color-royal-blue: hsla(221, 79%, 55%, 1);
+  --color-mountain-meadow: hsla(157, 68%, 43%, 1);
+  --color-sunset-orange: hsla(0, 95%, 62%, 1);
+  --color-white: hsla(0, 0%, 100%, 1);
+  --color-black-alpha-05: hsla(0, 0%, 0%, .05);
+  --color-black-alpha-10: hsla(0, 0%, 0%, .1); 
+  --color-black-alpha-20: hsla(0, 0%, 0%, .2);
+  --color-gold: hsla(50, 100%, 50%, 1);
+  --color-serenade: hsla(31, 100%, 96%, 1);
 
   /* Link colors to where they are used. */
-  --bgc-site: var(--blue-magenta);
 
-  --bgc-site-1: var(--blue-3);
-  --bgc-site-2: var(--black-3);
-
-
-  --bgc-alert-normal: var(--blue-2);
-  --bgc-alert-success: var(--green-1);
-  --bgc-alert-error: var(--red-1);
-
-  --c-button-normal: var(--white);
-
-  --bgc-search-form: var(--black-4);
-  --bxs-search-form-focus: var(--black-5);
-  --bgc-search-input: var(--black-1);
-  --bgc-search-button: var(--black-4);
-  --c-search-button: var(--white);
-  --c-search-input: var(--white);
-
-  --bgc-card: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .05));
+  --bg-primary: var(--color-medium-purple);
+  --bg-secondary: var(--color-black-alpha-10);
+  --text-primary: var(--color-serenade);
+  --bg-light: var(--color-serenade);
+  --box-shadow-primary: var(--color-black-alpha-20);
+  --bg-card: linear-gradient(to bottom, var(--color-black-alpha-20), var(--color-black-alpha-10));
+  --bg-nav: var(--color-black-alpha-20);
+  --bg-info-normal: var(--color-royal-blue);
+  --bg-info-success: var(--color-mountain-meadow);
+  --bg-info-error: var(--color-sunset-orange);
+  --bg-input: var(--color-black-alpha-05);
+  --bg-icon-star: var(--color-gold);
+  --bg-toggler: var(--color-serenade);
 
   /* Type */
   --baseline: 1.5rem;
   --font-size: 1rem;
-  --ratio: 1.333;
 
   /* Space */
   --s1: calc(var(--baseline) / 4);
@@ -58,10 +38,16 @@
   --s4: calc(var(--baseline) * 2);
   --s5: calc(var(--baseline) * 3);
   --s6: calc(var(--baseline) * 4);
+  --s7: calc(var(--baseline) * 8);
 
   /* Width */
   --width-full: 100%;
-  --width-lg: 85rem;
+  --width-xl: 85rem;
+  --width-lg: 75rem;
   --width-md: 60rem;
   --width-sm: 40rem;
 }
+  
+@custom-media --viewport-min-xl (width > 85rem);
+@custom-media --viewport-min-md (width > 60rem);
+@custom-media --viewport-min-sm (width > 40rem);

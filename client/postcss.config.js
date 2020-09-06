@@ -11,8 +11,9 @@ module.exports = {
         },
         stage: 3,
         features: {
-          'custom-properties': false,
+          'custom-media-queries': true,
           'nesting-rules': true,
+          'custom-properties': false,
         },
       },
     ],

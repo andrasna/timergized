@@ -1,11 +1,11 @@
-.item {
-  background: var(--bgc-card);
+.link {
+  background: var(--bg-card);
   width: 12rem;
   display: flex;
   flex-direction: column;
   padding: var(--s2);
   border-radius: .5rem;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+  box-shadow: 0 3px 3px var(--box-shadow-primary);
 }
 
 .image {
@@ -14,14 +14,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: var(--s1);
-  /* filter: grayscale(40%); */
-
-  &:hover {
-    /* filter: grayscale(0%); */
-  }
 }
 
-.infoArea {
+.details {
   display: flex;
 }
 
@@ -37,13 +32,14 @@
   font-size: 1.15rem;
 }
 
-.timeSpent {
+.time-spent {
   margin-bottom: 0;
   font-weight: 310;
 }
 
-.iconContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.icons {
+  display: grid;
+  gap: .6rem;
+  grid-template-rows: 1fr 1fr;
+  align-items: flex-end;
 }

@@ -1,22 +1,26 @@
 .form {
-  background-color: var(--bgc-search-form);
-  border-radius: .8rem;
+  --border-radius-form: .3rem;
+  
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius-form);
   display: flex;
   width: 100%;
-  max-width: 24rem;
+  max-width: 18rem;
+  transition: .2s ease;
 
   &:focus-within {
-    box-shadow: 0 0 1rem var(--bxs-search-form-focus);
+    box-shadow: 0 0 .5rem var(--box-shadow-primary);
+    max-width: 24rem;
   }
 }
 
 .input {
   border: 0;
   padding: .4rem 0 .4rem var(--s2);
-  color: var(--c-search-input);
-  background: var(--bgc-search-input);
+  color: var(--text-primary);
+  background: var(--bg-input);
   outline: none;
-  border-radius: .8rem 0 0 .8rem;
+  border-radius: var(--border-radius-form) 0 0 var(--border-radius-form);
   width: calc(100% - 2rem);
 }
 
@@ -26,8 +30,8 @@
   margin: 0 auto;
   border: 0;
   cursor: pointer;
-  border-radius: 0 .8rem .8rem 0;
-  background: var(--bgc-search-button);
+  border-radius: 0 var(--border-radius-form) var(--border-radius-form) 0;
+  background: var(--bg-secondary);
   padding: 0 var(--s1);
-  color: var(--c-search-button);
+  color: var(--text-primary);
 }

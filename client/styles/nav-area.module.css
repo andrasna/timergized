@@ -1,0 +1,16 @@
+.navArea {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto auto;
+  padding: var(--s1) var(--s3);
+  background: var(--bg-nav);
+  margin-bottom: 1rem;
+  gap: var(--s3);
+}
+
+.optsArea {
+  display: grid;
+  gap: var(--s3);
+  justify-content: start;
+  grid-template-columns: auto auto 1fr; 
+}

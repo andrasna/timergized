@@ -1,6 +1,6 @@
 import styles from '../styles/call-to-action.module.css'
 
-const CallToAction = (props) => {
+const CallToAction = () => {
   return(
     <header className={styles.display}>
       <h1>Timergized</h1>

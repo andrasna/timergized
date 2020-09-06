@@ -1,30 +1,30 @@
 .h1,
 h1 {
-  font-size: calc(var(--font-size) * pow(var(--ratio), 5));
+  font-size: 3.5rem;
   line-height: calc(var(--baseline) * 3);
 }
 
 .h2,
 h2 {
-  font-size: calc(var(--font-size) * pow(var(--ratio), 4));
-  line-height: calc(var(--baseline) * 3);
+  font-size: 2.2rem;
+  line-height: calc(var(--baseline) * 2);
 }
 
 .h3,
 h3 {
-  font-size: calc(var(--font-size) * pow(var(--ratio), 3));
+  font-size: 1.8rem;
   line-height: calc(var(--baseline) * 2);
 }
 
 .h4,
 h4 {
-  font-size: calc(var(--font-size) * pow(var(--ratio), 2));
+  font-size: 1.3rem;
   line-height: calc(var(--baseline) * 2);
 }
 
 .h5,
 h5 {
-  font-size: calc(var(--font-size) * var(--ratio));
+  font-size: 1.15rem;
   line-height: var(--baseline);
 }
 

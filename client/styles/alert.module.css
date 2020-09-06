@@ -1,14 +1,14 @@
 .normal {
   padding: var(--s2);
-  background-color: var(--bgc-alert-normal);
+  background-color: var(--bg-info-normal);
 }
 
 .error {
   composes: normal;
-  background-color: var(--bgc-alert-error);
+  background-color: var(--bg-info-error);
 }
 
 .success {
   composes: normal;
-  background-color: var(--bgc-alert-success);
+  background-color: var(--bg-info-success);
 }
