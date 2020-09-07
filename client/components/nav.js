@@ -86,6 +86,22 @@ const Nav = () => {
           border-radius: 4px;
         }
 
+        .open.lines {
+          gap: 0;
+        }
+
+        .open.line {
+          background: var(--bg-primary);
+          transform-origin: center;
+          grid-row-start: 1;
+          grid-column-start: 1;
+          transform: scale(160%) rotate(45deg);
+        }
+        
+        .open.line:nth-child(3) {
+          transform: scale(160%) rotate(-45deg);
+        }
+
         @media (min-width: ${desktopNavWidth}) {
           nav {
             display: block;
@@ -123,22 +139,6 @@ const Nav = () => {
         ul {
           visibility: ${isOpen ? 'visible' : 'hidden'};
           opacity: ${isOpen ? '1' : '0'};
-        }
-
-        .open.lines {
-          gap: 0;
-        }
-
-        .open.line {
-          background: var(--bg-primary);
-          transform-origin: center;
-          grid-row-start: 1;
-          grid-column-start: 1;
-          transform: scale(160%) rotate(45deg);
-        }
-        
-        .open.line:nth-child(3) {
-          transform: scale(160%) rotate(-45deg);
         }
     `}</style>
     </>
