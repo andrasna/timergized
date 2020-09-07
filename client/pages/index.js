@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Wrapper from '../components/wrapper'
 import ProjectListViewOpts from '../components/project-list-view-opts'
 import NavArea from '../components/nav-area'
 import ProjectList from '../components/project-list'
@@ -7,19 +6,17 @@ import ProjectList from '../components/project-list'
 const Home = () => {
   return (
     <>
-    <Head>
-      <title>Timergized</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+      <Head>
+        <title>Timergized</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-    <NavArea />
+      <NavArea />
 
-    <ProjectListViewOpts />
+      <ProjectListViewOpts />
 
-    <Wrapper type="normal">
       <ProjectList />
-    </Wrapper>
-  </>
+    </>
   )
 }
 

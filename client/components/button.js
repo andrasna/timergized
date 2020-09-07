@@ -1,11 +1,24 @@
-import styles from '../styles/button.module.css'
-
 const Button = (props) => {
   return(
-    <button className={styles[props.type]}>
+    <button className={'withIcon' in props && 'withIcon' }>
       {props.children}
+
+      <style jsx>{`
+        button {
+          border: 0;
+          cursor: pointer;
+          background-color: transparent; 
+          color: var(--text-primary);
+        }
+
+        .withIcon {
+          display: flex;
+          align-items: center;
+        }
+      `}</style>
     </button>
   )
 }
 
 export default Button
+

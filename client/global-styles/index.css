@@ -6,7 +6,7 @@
 @import 'type-sizing.css';
 @font-face {
   font-family: 'Work Sans';
-  src: url('../../fonts/WorkSans-VariableFont_wght.ttf');
+  src: url('../fonts/WorkSans-VariableFont_wght.ttf');
 }
 
 body {

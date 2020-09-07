@@ -1,6 +1,9 @@
 :root {
   /* Color catalogue */
   --color-medium-purple: hsla(251, 65%, 59%, 1);
+  --color-comet: hsla(227, 18%, 40%, 1);
+  --color-scampi: hsl(242, 32%, 52%, 1);
+
   --color-royal-blue: hsla(221, 79%, 55%, 1);
   --color-mountain-meadow: hsla(157, 68%, 43%, 1);
   --color-sunset-orange: hsla(0, 95%, 62%, 1);
@@ -8,14 +11,16 @@
   --color-black-alpha-05: hsla(0, 0%, 0%, .05);
   --color-black-alpha-10: hsla(0, 0%, 0%, .1); 
   --color-black-alpha-20: hsla(0, 0%, 0%, .2);
+  --color-black-alpha-35: hsla(0, 0%, 0%, .35);
   --color-gold: hsla(50, 100%, 50%, 1);
   --color-serenade: hsla(31, 100%, 96%, 1);
 
   /* Link colors to where they are used. */
 
-  --bg-primary: var(--color-medium-purple);
+  --bg-primary: var(--color-scampi);
   --bg-secondary: var(--color-black-alpha-10);
   --text-primary: var(--color-serenade);
+  --text-secondary: var(--color-scampi);
   --bg-light: var(--color-serenade);
   --box-shadow-primary: var(--color-black-alpha-20);
   --bg-card: linear-gradient(to bottom, var(--color-black-alpha-20), var(--color-black-alpha-10));
@@ -26,6 +31,8 @@
   --bg-input: var(--color-black-alpha-05);
   --bg-icon-star: var(--color-gold);
   --bg-toggler: var(--color-serenade);
+  --bg-overlay: var(--color-black-alpha-35);
+
 
   /* Type */
   --baseline: 1.5rem;
@@ -39,15 +46,4 @@
   --s5: calc(var(--baseline) * 3);
   --s6: calc(var(--baseline) * 4);
   --s7: calc(var(--baseline) * 8);
-
-  /* Width */
-  --width-full: 100%;
-  --width-xl: 85rem;
-  --width-lg: 75rem;
-  --width-md: 60rem;
-  --width-sm: 40rem;
 }
-  
-@custom-media --viewport-min-xl (width > 85rem);
-@custom-media --viewport-min-md (width > 60rem);
-@custom-media --viewport-min-sm (width > 40rem);
