@@ -1,13 +1,13 @@
-import StarBorderIcon from '@material-ui/icons/StarBorder'
+import Link from 'next/link'
 import StarIcon from '@material-ui/icons/Star'
 import EditIcon from '@material-ui/icons/Edit'
-import Link from 'next/link'
 
 function getRandomInt(min, max) {
   min = Math.ceil(min)
   max = Math.floor(max)
   return Math.floor(Math.random() * (max - min) + min)
 }
+
 
 const ProjectLink = () => {
   return(
@@ -21,7 +21,7 @@ const ProjectLink = () => {
           </div>
           <div className="icons">
             <EditIcon />
-            <StarIcon style={{'color': 'var(--bgc-star-icon)'}} />
+            <StarIcon />
           </div>
         </div>
 

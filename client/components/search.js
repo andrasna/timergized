@@ -47,7 +47,7 @@ const Search = () => {
           background: var(--bg-secondary);
           padding: 0 var(--s1);
           color: var(--text-primary);
-        }      
+        }
       `}</style>
     </form>
   )
