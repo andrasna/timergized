@@ -35,6 +35,7 @@ const ProjectLink = () => {
             padding: var(--s2);
             border-radius: .5rem;
             box-shadow: 0 3px 3px var(--box-shadow-primary);
+            justify-content: space-between;
           }
           
           .image {
@@ -42,23 +43,24 @@ const ProjectLink = () => {
             height: 7rem;
             background-repeat: no-repeat;
             background-size: cover;
-            margin-bottom: var(--s1);
+            margin-bottom: var(--s2);
           }
           
           .details {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
           }
           
           .title {
             margin-bottom: var(--s1);
-            font-weight: 500;
+            font-weight: 550;
             margin-right: .5rem;
             text-overflow: ellipsis;
             display: -webkit-box;
-            -webkit-line-clamp: 2;
+            -webkit-line-clamp: 1;
             -webkit-box-orient: vertical;  
             overflow: hidden;
-            font-size: 1.15rem;
           }
           
           .time-spent {

@@ -2,7 +2,7 @@
   /* Color catalogue */
   --color-medium-purple: hsla(251, 65%, 59%, 1);
   --color-comet: hsla(227, 18%, 40%, 1);
-  --color-scampi: hsl(242, 32%, 52%, 1);
+  --color-scampi: hsla(242, 32%, 52%, 1);
   --color-royal-blue: hsla(221, 79%, 55%, 1);
   --color-mountain-meadow: hsla(157, 68%, 43%, 1);
   --color-sunset-orange: hsla(0, 95%, 62%, 1);

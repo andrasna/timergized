@@ -41,6 +41,10 @@ const ProjectList = () => {
           margin: 0 auto;
         }
 
+        li {
+          display: flex;
+        }
+
         @media (min-width: ${width.xs}) {
           ul {
             grid-template-columns: repeat(auto-fit, minmax(11.5rem, auto));
