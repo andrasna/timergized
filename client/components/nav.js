@@ -55,6 +55,7 @@ const Nav = () => {
           border-radius: .4rem;
           padding: var(--s3);
           transition: opacity .2s ease;
+          align-items: center;
         }
 
         a {
@@ -104,7 +105,7 @@ const Nav = () => {
 
         @media (min-width: ${desktopNavWidth}) {
           nav {
-            display: block;
+            display: flex;
           }
 
           ul {

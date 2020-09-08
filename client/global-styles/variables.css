@@ -3,7 +3,6 @@
   --color-medium-purple: hsla(251, 65%, 59%, 1);
   --color-comet: hsla(227, 18%, 40%, 1);
   --color-scampi: hsl(242, 32%, 52%, 1);
-
   --color-royal-blue: hsla(221, 79%, 55%, 1);
   --color-mountain-meadow: hsla(157, 68%, 43%, 1);
   --color-sunset-orange: hsla(0, 95%, 62%, 1);
@@ -32,7 +31,7 @@
   --bg-icon-star: var(--color-gold);
   --bg-toggler: var(--color-serenade);
   --bg-overlay: var(--color-black-alpha-35);
-
+  --border-radius-primary: .3rem;
 
   /* Type */
   --baseline: 1.5rem;

@@ -12,10 +12,9 @@ const Search = () => {
 
       <style jsx>{`
         form {
-          --border-radius-form: .3rem;
           
           background-color: var(--bg-secondary);
-          border-radius: var(--border-radius-form);
+          border-radius: var(--border-radius-primary);
           display: flex;
           width: 100%;
           max-width: 18rem;
@@ -33,7 +32,7 @@ const Search = () => {
           color: var(--text-primary);
           background: var(--bg-input);
           outline: none;
-          border-radius: var(--border-radius-form) 0 0 var(--border-radius-form);
+          border-radius: var(--border-radius-primary) 0 0 var(--border-radius-primary);
           width: calc(100% - 2rem);
         }
 
@@ -43,7 +42,7 @@ const Search = () => {
           margin: 0 auto;
           border: 0;
           cursor: pointer;
-          border-radius: 0 var(--border-radius-form) var(--border-radius-form) 0;
+          border-radius: 0 var(--border-radius-primary) var(--border-radius-primary) 0;
           background: var(--bg-secondary);
           padding: 0 var(--s1);
           color: var(--text-primary);

@@ -1,21 +1,19 @@
 import Nav from './nav'
 import Search from './search'
 import Button from './button'
-import PersonIcon from '@material-ui/icons/Person'
 import AddIcon from '@material-ui/icons/Add'
 
 const NavArea = () => {
   return(
     <div className="nav-area">
       <div className="opts-area">
-        <Button withIcon>
-          <PersonIcon />
-          John Doe
+        <Button hasBackground>
+          JD
         </Button>
 
-        <Button withIcon>
+        <Button hasBackground>
           <AddIcon />
-          Add New
+          <span className="visuallyhidden">New</span>
         </Button>
       </div>
 
@@ -30,13 +28,13 @@ const NavArea = () => {
           padding: var(--s1) var(--s3);
           background: var(--bg-nav);
           margin-bottom: 1rem;
-          gap: var(--s3);
-          align-items: center;
+          gap: var(--s2);
+          align-items: streatch;
         }
 
         .opts-area {
           display: grid;
-          gap: var(--s3);
+          gap: var(--s2);
           justify-content: start;
           grid-template-columns: auto auto;
         }

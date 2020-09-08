@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import StarIcon from '@material-ui/icons/Star'
 import EditIcon from '@material-ui/icons/Edit'
+import width from '../theme/width.js'
 
 function getRandomInt(min, max) {
   min = Math.ceil(min)
@@ -28,7 +29,7 @@ const ProjectLink = () => {
         <style jsx>{`
           a {
             background: var(--bg-card);
-            width: 12rem;
+            width: 10rem;
             display: flex;
             flex-direction: column;
             padding: var(--s2);
@@ -70,6 +71,12 @@ const ProjectLink = () => {
             gap: .6rem;
             grid-template-rows: 1fr 1fr;
             align-items: flex-end;
+          }
+
+          @media (min-width: ${width.xs}) {
+            a {
+              width: 12rem;
+            }
           }
         `}</style>
       </a>

@@ -7,10 +7,12 @@ const ProjectListViewOpts = () => {
     <div className="outer">
       <Button>
         <ViewComfyIcon style={{ 'fontSize': '1.8rem'}}/>
+        <span className="visuallyhidden">Gallery view</span>
       </Button>
 
       <Button>
         <ViewListIcon style={{ 'fontSize': '1.8rem'}}/>
+        <span className="visuallyhidden">List view</span>
       </Button>
 
       <style jsx>{`
