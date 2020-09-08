@@ -7,11 +7,11 @@ const NavArea = () => {
   return(
     <div className="nav-area">
       <div className="opts-area">
-        <Button hasBackground>
+        <Button withBackground>
           JD
         </Button>
 
-        <Button hasBackground>
+        <Button withBackground>
           <AddIcon />
           <span className="visuallyhidden">New</span>
         </Button>

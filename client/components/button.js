@@ -1,6 +1,6 @@
 const Button = (props) => {
   return(
-    <button className={'hasBackground' in props && 'hasBackground' }>
+    <button className={'withBackground' in props && 'with-background' }>
       {props.children}
 
       <style jsx>{`
@@ -14,7 +14,7 @@ const Button = (props) => {
           justify-content: center;
         }
 
-        .hasBackground {
+        .with-background {
           padding: var(--s1);
           min-width: 2.5rem;
           background: var(--bg-secondary);
