@@ -67,7 +67,6 @@ const Nav = () => {
           border-radius: .3rem;
           z-index: 1;
           width: 2.5rem;
-          height: 2.5rem;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -79,6 +78,7 @@ const Nav = () => {
         }
 
         .line {
+          display: block;
           transition: .2s ease;
           content: '';
           width: .8rem;
@@ -96,11 +96,11 @@ const Nav = () => {
           transform-origin: center;
           grid-row-start: 1;
           grid-column-start: 1;
-          transform: scale(160%) rotate(45deg);
+          transform: rotate(45deg) scale(1.6);
         }
         
         .open.line:nth-child(3) {
-          transform: scale(160%) rotate(-45deg);
+          transform: rotate(-45deg) scale(1.6);
         }
 
         @media (min-width: ${desktopNavWidth}) {
